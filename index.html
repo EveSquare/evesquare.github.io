@@ -4,8 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EveSquare</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <style>
+        .start {
+        	background: #FFF;
+        	position: fixed;
+        	top: 0;
+        	left: 0;
+        	height: 100%;
+        	width: 100%;
+        	z-index: 9000;
+        }
+        .start p {
+        	position: fixed;
+        	left: 50%;
+        	top: 50%;
+        	transform: translate(-50%, -50%);
+        	display: none;
+        	z-index: 9999;
+        	width: 280px;
+        }
+        .start img{
+            height: 150px;
+            width: 150px;
+        }
+    </style>
 </head>
 <body>
-    <h1>EveSquare</h1>
+    <script>
+        $(function() {
+        	setTimeout(function(){
+        		$('.start p').fadeIn(1600);
+        	},500); //0.5秒後にロゴをフェードイン!
+        	setTimeout(function(){
+        		$('.start').fadeOut(500);
+        	},2500); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
+        });
+    </script>
+    <div class="start">
+        <p><img src="img/logo.png" alt=""></p>
+    </div>
+
+    <header>
+
+    </header>
+
+    <main>
+        <nav>
+            <ol>
+                <li><h1>EveSquare</h1></li>
+            </ol>
+        </nav>
+        
+    </main>
+
+    <footer>
+
+    </footer>
+
+    
 </body>
 </html>
