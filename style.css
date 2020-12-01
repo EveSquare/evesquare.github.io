@@ -14,12 +14,12 @@ body{
 }
 
 main {
-    background: #ffffff;
+    background: #000;
     flex: 1;
 }
 
 footer {
-    background: #333333;
+    background: #111;
     color: #ffffff;
     height: 40px;
     padding-top: 10px;
@@ -41,10 +41,6 @@ nav img{
     margin: 15px;
 }
 
-nav h1{
-    text-decoration: none;
-}
-
 nav ul li{
     list-style: none;
     display: inline-block;
@@ -54,4 +50,18 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
     color: bisque;
+}
+
+nav:hover,ul:hover, li:hover, a:hover{
+    text-decoration: underline;
+}
+
+.main-text p{
+    text-align: center;
+    background-color: cornsilk;
+}
+
+.main-card{
+    text-align: center;
+    margin-top: 100px;
 }
