@@ -2,11 +2,7 @@
     font-family: courier;
 }
 
-header{
-    background-color: #000;
-}
-
-body{
+body {
     margin: 0;
     display: flex;
     flex-flow: column;
@@ -14,54 +10,26 @@ body{
 }
 
 main {
-    background: #000;
     flex: 1;
 }
 
 footer {
-    background: #111;
-    color: #ffffff;
     height: 40px;
     padding-top: 10px;
     text-align: center;
 }
 
-nav{
-    text-align: center;
-    margin-bottom: 7px;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-nav ul{
-    margin: 0;
-    padding: 0;
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-nav img{
-    width: 100px;
-    margin: 15px;
-}
-
-nav ul li{
-    list-style: none;
-    display: inline-block;
-    width: 10%;
-}
-
-nav ul li a{
-    text-decoration: none;
-    color: bisque;
-}
-
-nav:hover,ul:hover, li:hover, a:hover{
-    text-decoration: underline;
-}
-
-.main-text p{
-    text-align: center;
-    background-color: cornsilk;
-}
-
-.main-card{
-    text-align: center;
-    margin-top: 100px;
+li {
+    line-height: 1.5;
 }

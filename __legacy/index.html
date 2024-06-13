@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EveSquare</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="mouse.js"></script>
+    <style>
+        .start {
+        	background: #000;
+        	position: fixed;
+        	top: 0;
+        	left: 0;
+        	height: 100%;
+        	width: 100%;
+        	z-index: 9000;
+        }
+        .start p {
+        	position: fixed;
+        	left: 50%;
+        	top: 50%;
+        	transform: translate(-50%, -50%);
+        	display: none;
+        	z-index: 9999;
+        	width: 280px;
+        }
+        .start img{
+            width: 150px;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        $(function() {
+        	setTimeout(function(){
+        		$('.start p').fadeIn(1600);
+        	},500); //0.5秒後にロゴをフェードイン!
+        	setTimeout(function(){
+        		$('.start').fadeOut(500);
+        	},2500); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
+        });
+    </script>
+    <div class="start">
+        <p><img src="img/logo.png" alt=""></p>
+    </div>
+
+    <header>
+        <nav>
+            <img src="./img/hxvv.png">
+            
+            <ul>
+                <li><a href="/">EveSquare</a></li>
+                <li><a href="/about">about</a></li>
+                <li><a href="/create">create</a></li>
+                <li><a href="/contact">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-text">
+            <p>mainText</p>
+        </div>
+        
+        <p class="main-card">
+            <img class="main-card" src="./img/uLuV.gif"> 
+        </p>
+        
+    </main>
+
+    <footer>
+        <small>EveSquare</small>
+    </footer>
+</body>
+</html>
