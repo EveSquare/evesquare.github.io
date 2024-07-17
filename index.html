@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>evesquare</title>
     <link rel="stylesheet" href="/style.css">
 </head>
+
 <body class="container">
     <header>
-        <div class="logo">
+        <a href="/" class="logo">
             <img src="/favicon.ico" alt="logo" width="32" height="32">
             <h1>evesquare</h1>
-        </div>
+        </a>
     </header>
     <main>
         <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li><a href="http://evesquare.vercel.app/">Home</a></li>
+            <li><a href="https://github.com/EveSquare">GitHub</a></li>
+            <li><a href="https://www.instagram.com/evesquaretti">Instagram</a></li>
+            <li><a href="https://x.com/evesquare_dev">X</a></li>
+            <li><a href="https://www.npmjs.com/~evesquare">npm</a></li>
         </ul>
     </main>
     <footer>
-        <p>&copy; 2024 evesquare</p>
+        <p>&copy; <span id="year"></span> evesquare</p>
     </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
 </body>
+
 </html>
